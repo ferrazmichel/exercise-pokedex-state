@@ -7,7 +7,7 @@ class Pokemon extends React.Component {
         return (
             <div className="pokemon">
                 <div>
-                    <p> {name} </p>
+                    <p className="pokeName"> {name} </p>
                     <p> {type} </p>
                     <p> {`Average weight: ${averageWeight.value} ${averageWeight.measurementUnit}`}</p>
                 </div>
