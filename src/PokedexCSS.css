@@ -30,6 +30,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 10px;
 }
 
 .row-btn-next {
@@ -47,6 +48,7 @@
     border: 0px solid rgb(2, 40, 75);
     border-width: 0 0 4px 0;
     padding: 10px 20px 10px 20px;
+    margin: 10px;
     color: #fff;
     font-size: initial;
     font-family: Helvetica Neue;
@@ -54,7 +56,7 @@
     font-style: normal;
     border-radius: 10px;
 }
-.btn-next:active {
+.btn-next:disabled {
   top: 3px;
   border-width: 0 0 1px 0;
 }
@@ -95,7 +97,6 @@
     background-color: green;
   }
 }
-
 
 #Bug{
   background: rgb(69, 141, 10);
@@ -214,7 +215,6 @@
   border-width: 0 0 1px 0;
 }
 
-
 #Poison {
   background: rgb(22, 165, 9);
   border: 0px solid rgb(2, 40, 75);
@@ -259,4 +259,9 @@
 #Psychic:active {
   top: 3px;
   border-width: 0 0 1px 0;
+}
+
+.pokeInfos {
+  text-align: center;
+  padding: 0 0 0 10px;
 }

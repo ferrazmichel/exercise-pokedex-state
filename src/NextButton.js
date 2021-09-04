@@ -4,7 +4,7 @@ class NextButton extends React.Component {
   render() {
     const { onClick, disabled } = this.props
     return (
-      <button className="pokedex-button" disabled={ disabled } onClick={ onClick }>Next Poke</button>
+      <button className="btn-next" disabled={ disabled } onClick={ onClick }>Next Poke</button>
     )
   }
 }

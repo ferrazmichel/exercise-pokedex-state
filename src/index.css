@@ -7,7 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-<<<<<<< HEAD
 .pokemon {
   display: flex;
   align-items: center;
@@ -46,9 +45,3 @@ body {
 .pokeName {
   font-weight: bold;
 }
-=======
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
->>>>>>> cb0b673643c7f4370c90486ee826391bb8a1f896

@@ -1,6 +1,9 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import Pokemon from './Pokemon';
 import NextButton from './NextButton';
+import './PokedexCSS.css';
+
 
 class Pokedex extends React.Component {
   constructor(props) {
@@ -45,15 +48,15 @@ class Pokedex extends React.Component {
 					<div className="pokedex">
 							<Pokemon pokemon={ pokemon } />
 							<NextButton onClick={ this.nextPokemonButton } disabled={ this.buttonEnable() } />
-              <div>
-                <button onClick={ this.filterType } className="all type-button">All Types</button>
-                <button onClick={ this.filterType } className="Electric type-button">Electric</button>
-                <button onClick={ this.filterType } className="Fire type-button">Fire</button>
-                <button onClick={ this.filterType } className="Bug type-button">Bug</button>
-                <button onClick={ this.filterType } className="Poison type-button">Poison</button>
-                <button onClick={ this.filterType } className="Psychic type-button">Psychic</button>
-                <button onClick={ this.filterType } className="Normal type-button">Normal</button>
-                <button onClick={ this.filterType } className="Dragon type-button">Dragon</button>
+              <div className="row-btn-types">
+                <button id="All" onClick={ this.filterType } className="all type-button">All Types</button>
+                <button id="Electric" onClick={ this.filterType } className="Electric type-button">Electric</button>
+                <button id="Fire" onClick={ this.filterType } className="Fire type-button">Fire</button>
+                <button id="Bug" onClick={ this.filterType } className="Bug type-button">Bug</button>
+                <button id="Poison" onClick={ this.filterType } className="Poison type-button">Poison</button>
+                <button id="Psychic" onClick={ this.filterType } className="Psychic type-button">Psychic</button>
+                <button id="Normal" onClick={ this.filterType } className="Normal type-button">Normal</button>
+                <button id="Dragon" onClick={ this.filterType } className="Dragon type-button">Dragon</button>
               </div>
 					</div>
 			);
